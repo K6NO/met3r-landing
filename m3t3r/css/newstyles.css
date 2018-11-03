@@ -2,9 +2,6 @@
 @import "https://fonts.googleapis.com/css?family=Lato:300,400,500,600,700";
 @import "https://fonts.googleapis.com/css?family=Aldrich:300,400,500,600,700";
 
-/*src: url('../fonts/Meter-Light.eot');*/
-
-
 @font-face {
     font-family: Meter;
     src: url('../fonts/Meter-Light.ttf') format('truetype');
@@ -38,7 +35,7 @@ li {
 ul{
     margin: 0 auto;
 }
-video {
+.video-phone {
     width:100%;
     max-width:600px;
     height:auto;
@@ -98,10 +95,13 @@ h5 {
     font-weight: 300;
 }
 
-/*h5>a{*/
-    /**/
-/*}*/
-
+.keywords {
+    font-size: 18px;
+    color: #c4c4c4;
+    line-height: 30px;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
 
 p.large {
     font-size: 30px;
@@ -115,6 +115,7 @@ p.medium {
     color: #3c3940;
 }
 p.small {
+    text-align: justify;
     font-size: 16px;
     line-height: 24px;
     color: #737373;
@@ -125,11 +126,16 @@ p.small {
 }
 .gray-bg {
     background: #f1eff1;
+    box-shadow: 0 5px 4px -5px #bdbdbd;
+}
+.gray-grad-bg {
+    background: linear-gradient(#ffffff, #f1eff1);
+    margin-top: 5px;
+    box-shadow: 0 5px 4px -5px #bdbdbd;
 }
 .bg-gray {
     background: rgba(0, 0, 0, 0) -webkit-linear-gradient(#fff 0%, #fefefe 10%) repeat scroll 0 0;
     background: rgba(0, 0, 0, 0) linear-gradient(#fff 0%, #fefefe 10%) repeat scroll 0 0;
-
 }
 .bg-purple {
     background: #350b72;
@@ -139,7 +145,10 @@ p.small {
     max-width: 1140px;
     padding: 30px 15px 0;
     margin: 0 auto;
+}
 
+.meter-cube-img {
+    width: 100%;
 }
 
 .div-outer {
@@ -150,31 +159,32 @@ p.small {
     display: inline-block;
 }
 .row{
-    padding: 30px 0 0;
+    padding: 15px 0;
     width: 100%;
 }
 
-.jumbo {
-    /*min-height: 600px;*/
+
+.icon-gray-bg {
+    max-width: 25%;
+}
+.icon-image {
+    width: 25%;
 }
 
-/*.jumbo-text-holder {*/
-    /*position: absolute;*/
-/*}*/
-.jumbo-text {
-    position: relative;
-    top: 50%;
-    transform: translateY(50%); /* or try 50% */
+.video-lf1 {
+    width:100%;
+    padding-top:100px;
+    height:auto;
 }
 
 .icon-container {
     padding: 60px 0 20px;
+    text-align: center;
 }
 
 .feature-col {
     padding: 0 30px;
 }
-
 
 .bt-learn-more {
     padding: 13px 50px;
@@ -259,7 +269,13 @@ p.small {
 /*
     MEDIA QUERIES
 */
-
+@media(min-width: 960px) {
+    .jumbo-text {
+        position: relative;
+        top: 50%;
+        transform: translateY(50%);
+    }
+}
 @media(max-width: 768px){
     h3 {
         font-size: 24px;
@@ -284,6 +300,11 @@ p.small {
 
     .navbar-header > button:hover {
         color: #737373;
+    }
+    .video-lf1 {
+        width:100%;
+        padding-top:20px;
+        height:auto;
     }
     .jumbo>.row:nth-of-type(1) {
         padding: 0;
@@ -321,6 +342,7 @@ p.small {
     .icon-container {
         padding: 20px 0;
     }
+
     .bt-learn-more{
         margin: 0 auto;
     }
