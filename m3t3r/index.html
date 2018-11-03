@@ -268,12 +268,27 @@
 <div class="gray-grad-bg">
     <div class="wrapper">
         <div class="row text-center">
+            <h3>More info & contact</h3>
+            <div class="subscribe-box col-sm-10 col-sm-offset-1">
+                <div class="small-subscribe-box">
+                    <form class="subscription-form" method="POST" action="php/mail.php">
+                        <div class="form-holder">
+                            <input type="text" class="form-control" id="your_name" name="your_name" placeholder="Your Name">
+                            <input type="email" class="form-control" id="your_email" name="your_email" placeholder="Your Email">
+                            <textarea class="form-control message-area" id="your_message" name="your_message" placeholder="Message"></textarea>
+                            <button class="email-submit-btn" type="submit">SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="row text-center sign-up-row">
             <h3>Sign up to our newsletter to get notified about our progress!</h3>
-            <div class="subscribe-box col-sm-10 col-md-offset-1">
+            <div class="subscribe-box col-sm-10 col-sm-offset-1">
                 <div class="small-subscribe-box">
                     <form class="subscription-form" method="POST" action="php/subscribe.php">
                         <div class="form-holder">
-                            <input type="email" class="form-control" id="subscribe-input" name="subscribe-input" placeholder="Enter Your Email">
+                            <input type="email" class="form-control sign-up-email" id="subscribe-input" name="subscribe-input" placeholder="Enter Your Email">
                             <button class="email-submit-btn" type="submit">SIGN UP</button>
                     </form>
                 </div>

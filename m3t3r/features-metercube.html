@@ -226,15 +226,15 @@
 
         <section class="newsletter">
         <div class="row text-center">
-            <h3>Sign up to our newsletter to get notified about our progress!</h3>
-
-            <div class="subscribe-box col-sm-10 col-sm-offset-1">
+            <h3>More info & contact</h3>
+            <div class="subscribe-box col-sm-10 col-sm-offset-1"></div>
                 <div class="small-subscribe-box">
-                    <form class="subscription-form" method="POST" action="php/subscribe.php">
+                    <form class="subscription-form" method="POST" action="php/mail.php">
                         <div class="form-holder">
-                            <input type="email" class="form-control" id="subscribe-input" name="subscribe-input" placeholder="Enter Your Email">
-                            <button class="email-submit-btn" type="submit">SIGN UP</button>
-                        </div>
+                            <input type="email" class="form-control" id="contact-name" name="contact-name" placeholder="Your Name">
+                            <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Your Email">
+                            <textarea class="form-control message-area" id="contact-message" name="contact-message" placeholder="Message"></textarea>
+                            <button class="email-submit-btn" type="submit">SEND</button>
                     </form>
                 </div>
             </div>

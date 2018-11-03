@@ -3,7 +3,7 @@
 		$name = $_POST['your_name'];
 		$email = $_POST['your_mail'];
 		$message = $_POST['your_message'];
-		$subject = $_POST['your_subject'];
+		
 
 		// Sender Email and Name
 		$from = stripslashes($_POST['your_name'])."<".stripslashes($_POST['your_mail']).">";
